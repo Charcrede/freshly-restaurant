@@ -1,0 +1,290 @@
+/* ==========================================================
+                        les importations
+========================================================== */
+@import url(../effet-js/slick/slick-theme.css);
+@import url(../effet-js/slick/slick.css);
+@import url(../fonts/Athiti.css);
+@import url(../fonts/Merienda.css);
+@import url(mobile.css);
+@import url(tablette.css);
+
+/* ==========================================================
+                        LES VARIABLES
+========================================================== */
+:root {
+    --rouge: #950000;
+    --beige: #ebe3db;
+    --marron: #4c4343;
+    --police-far: Athiti;
+    --police-titre: Merienda;
+}
+
+/* ==========================================================
+                        LES GENERALITES
+========================================================== */
+
+/* ========= Reset ========= */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--police-far);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    transition: 1s;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* ========= La généralité des titres ========= */
+h1 {
+    font-size: 3rem;
+    font-family: var(--police-titre);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: var(--police-titre);
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: var(--police-titre);
+}
+
+/* ========= La généralité des boutons et des liens ========= */
+button {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display:block;
+    transition: 1s;
+}
+
+/* ========= La généralité des pictos ========= */
+.nom::before,
+.nom::after,
+h1::before,
+h1::after,
+main h2::before,
+main h2::after,
+h3::before,
+h3::after,
+main section li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    font-weight: 900;
+    color: var(--rouge);
+    margin: 1rem;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
+/* ==========================================================
+                            HEADER
+========================================================== */
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 20%;
+}
+
+.logo-nom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logo-nom p{
+    transition: 1s;
+}
+.logo-nom:hover img{
+    transform: scale(1.1);
+}
+.logo-nom:hover p{
+    color: var(--rouge);
+    transform: scale(1.1);
+}
+.logo-nom:hover p::before, .logo-nom:hover p::after{
+    color: black;
+    transform: scale(1.1);
+}
+.nom {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: black;
+    padding: 1rem 2rem;
+    background-color: var(--beige);
+    font-weight: bold;
+}
+
+header nav ul li a:hover,
+.active {
+    background-color: var(--marron);
+    color: #fff;
+}
+
+/* ==========================================================
+                            Main
+========================================================== */
+/* ========= Le slide ========= */
+.slick-dots li.slick-active button:before {
+    color: var(--rouge);
+}
+
+.slick-dots li button:before {
+    font-size: 2rem;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-size: 5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.slick div {
+    position: relative;
+    z-index: -1;
+}
+
+.slick-prev::before {
+    left: 3rem;
+}
+
+.slick-next::before {
+    right: 3rem;
+}
+/* ========= section du main ========= */
+main section:first-of-type{
+    text-align: center;
+}
+.description-freshly{
+    text-align: justify;
+    overflow: auto;
+}
+.description-freshly img{
+    float: right;
+    width: 40%;
+    margin: 2rem;
+}
+/* ========= article de la section du main ========= */
+article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+article h2{
+    grid-column: 1 / -1;
+}
+article section{
+    background-color:var(--beige);
+}
+article section ul{
+    text-align: left;
+}
+article section ul li{
+    padding: 1rem;
+    border-bottom: 0.1rem dashed var(--marron);
+}
+article section a{
+    padding: 1rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+    background-color:var(--marron);
+    color: #fff;
+}
+article section a:nth-of-type(2) img{
+    width: 8%;
+}
+article section a div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========= hover de l'image des articles dans la section du main ========= */
+
+a.les-menus{
+    background-color: var(--marron);
+    height: 27rem;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    transition: 1s;
+}
+.prix{
+    border: 0.4rem solid var(--beige);
+    width: 80%;
+    margin: auto;
+    padding: 5rem;
+    display: none;
+    transition: 1s;
+}
+.les-menus img{
+    margin: 0;
+}
+.les-menus:hover .prix{
+    display: block;
+}
+.les-menus:hover img{
+    display: none;
+}
+/* ==========================================================
+                         FOOTER
+========================================================== */
+footer{
+    background: url(../ressources/images/footer-bg.jpg);
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    text-align: center;
+    color: #fff;
+    margin-top:3rem;
+}
+footer h2{
+    padding-block: 1rem;
+    padding-inline:10rem;
+    border-bottom: 1px dashed #fff;
+}
+footer .reseaux-sociaux{
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    color: #fff;
+}
+footer span{
+    font-size: 3rem;
+    margin-inline:1rem;
+}

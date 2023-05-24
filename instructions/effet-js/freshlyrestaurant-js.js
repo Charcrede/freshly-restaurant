@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $(".slick").slick({
+      infinite:true,
+      slidesToShow:1,
+      dots:true,
+      autoplay:true,
+      autoplaySpeed:1000,
+    });
+  })

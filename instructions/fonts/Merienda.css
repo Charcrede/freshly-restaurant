@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Merienda;
+    src: url(../../../font_main/ofl/merienda/merienda-black.woff2) format("woff2"),
+        url(../../../font_main/ofl/merienda/merienda-black.woff) format("woff"),
+        url(../../../font_main/ofl/merienda/merienda-black.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Merienda;
+    src: url(../../../font_main/ofl/merienda/merienda-bold.woff2) format("woff2"),
+        url(../../../font_main/ofl/merienda/merienda-bold.woff) format("woff"),
+        url(../../../font_main/ofl/merienda/merienda-bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Merienda;
+    src: url(../../../font_main/ofl/merienda/merienda-extrabold.woff2) format("woff2"),
+        url(../../../font_main/ofl/merienda/merienda-extrabold.woff) format("woff"),
+        url(../../../font_main/ofl/merienda/merienda-extrabold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Merienda;
+    src: url(../../../font_main/ofl/merienda/merienda-light.woff2) format("woff2"),
+        url(../../../font_main/ofl/merienda/merienda-light.woff) format("woff"),
+        url(../../../font_main/ofl/merienda/merienda-light.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Merienda;
+    src: url(../../../font_main/ofl/merienda/merienda-medium.woff2) format("woff2"),
+        url(../../../font_main/ofl/merienda/merienda-medium.woff) format("woff"),
+        url(../../../font_main/ofl/merienda/merienda-medium.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Merienda;
+    src: url(../../../font_main/ofl/merienda/merienda-regular.woff2) format("woff2"),
+        url(../../../font_main/ofl/merienda/merienda-regular.woff) format("woff"),
+        url(../../../font_main/ofl/merienda/merienda-regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Merienda;
+    src: url(../../../font_main/ofl/merienda/merienda-semibold.woff2) format("woff2"),
+        url(../../../font_main/ofl/merienda/merienda-semibold.woff) format("woff"),
+        url(../../../font_main/ofl/merienda/merienda-semibold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
