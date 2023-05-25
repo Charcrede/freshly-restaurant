@@ -4,7 +4,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 3000,
   });
   $("#All").click(function () {
     $("#All").css({

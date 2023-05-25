@@ -505,6 +505,7 @@ footer {
     text-align: center;
     color: #fff;
     margin-top: 3rem;
+    flex-flow: row wrap;
 }
 
 footer h2 {
@@ -533,4 +534,15 @@ footer a {
 footer span {
     font-size: 3rem;
     margin-inline: 1rem;
+}
+.footer .par{
+    flex-basis: 100%;
+    background-color: #444;
+    text-align: center;
+}
+.footer .boss a{
+    display:inline;
+}
+.footer .par{
+    padding-top: 2rem;
 }
