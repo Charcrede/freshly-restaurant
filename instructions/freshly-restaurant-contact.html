@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un restaurant 5 étoiles avec les chefs cuisiner les plus respecter de la côte-est, un cardre chaleureux, un acceuil des plus chaleureux, et qui s'adapte aux besoins et aux exigence de tout un chacun de nous, Freshly, c'est tout simplement le restaurant par excellence">
+    <link rel="icon" href="ressources/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/freshly-restaurant.css">
+    <script src="effet-js/fontawesome.js"></script>
+    <script src="../../HIGHFIVE/jquery/jquery-3.7.0.min.js"></script>
+    <script src="../instructions/effet-js/slick/slick.min.js"></script>
+    <script src="effet-js/freshlyrestaurant-js.js"></script>
+    <title>Freshly-restaurant: Contact</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a class="logo-nom">
+                <img src="ressources/images/logo.png" alt="des couverts sur un arrière plan noir">
+                <p class="nom">Freshly restaurant</p>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="freshly-restaurant-home.html">Home</a></li>
+                    <li><a href="freshly-restaurant-about.html">About</a></li>
+                    <li><a href="freshly-restaurant-menus.html">Menus</a></li>
+                    <li><a href="freshly-restaurant-contact.html" class="active">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contact">
+                <h1>Contact us</h1>
+                <p>If your what to make a reservation, please complete this form. <br>
+                    <em>Fields with <span>*</span> are required.</em>
+                </p>
+                <form action="">
+                    <fieldset>
+                        <legend>Reservation</legend>
+                        <label for=""><span>*</span> Date</label>
+                        <input type="text" placeholder="jj/mm/yyyy">
+                        <label for=""><span>*</span> Time</label>
+                        <input type="text" placeholder="--:--">
+                        <label for=""><span>*</span> Number of guests</label>
+                        <select name="guests">
+                            <option value="0" disabled selected>...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Details</legend>
+                        <label for=""><span>*</span> Name</label>
+                        <input type="text" placeholder="eg:John Doe">
+                        <label for=""><span>*</span> Email</label>
+                        <input type="email" placeholder="eg: johndoe@mail.com">
+                        <label for=""><span>*</span> Telephone</label>
+                        <input type="tel" placeholder="eg :+00 0000 000 000">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Further request</legend>
+                        <textarea name="further request" cols="25" rows="7"></textarea>
+                    </fieldset>
+                    <button> reserve</button>
+                </form>
+               
+            </section>
+        </main>
+    </div>
+    <footer>
+        <section>
+            <h2>Opening hours</h2>
+            <ul>
+                <li>Monday:Closed</li>
+                <li>Tue-Wed : 9am - 10pm</li>
+                <li>Thu-Fri : 9am - 10pm</li>
+                <li>Sat-Sun : 5pm - 10pm</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <address>
+                <ul>
+                    <li><a href="">13 Christopher Street</a></li>
+                    <li><a href="">New York,</a></li>
+                    <li><a href="">NY 10014-3543</a></li>
+                    <li><a href="tel">+01 2000 800 9999</a></li>
+                </ul>
+            </address>
+        </section>
+        <section>
+            <h2>Social networks</h2>
+            <div class="reseaux-sociaux">
+                <a href="https://www.facebook.com"><span class="fa-brands fa-facebook-f"></span></a>
+                <a href="https://www.instagram.com"><span class="fa-brands fa-instagram"></span></a>
+                <a href="https://www.pinterest.com"><span class="fa-brands fa-pinterest-p"></span></a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
