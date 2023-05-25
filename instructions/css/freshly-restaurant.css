@@ -272,7 +272,7 @@ article section a div {
     justify-content: center;
 }
 
-.prix-menu svg {
+.prix-menu img {
     width: 15%;
 }
 
@@ -321,7 +321,7 @@ article section a:nth-of-type(2):hover {
     opacity: 1;
 }
 
-.les-menus:hover img {
+.les-menus:hover>img {
     opacity: 0.1;
 }
 
