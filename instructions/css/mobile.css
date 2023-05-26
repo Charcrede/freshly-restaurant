@@ -1,0 +1,71 @@
+/* =======================================================
+                            HEADER
+======================================================= */
+header nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+}
+
+header nav ul li {
+    border: 1px solid var(--marron);
+}
+html{
+
+    font-size: 50%;
+}
+/* =======================================================
+                           MAIN
+======================================================= */
+main {
+    padding: 2rem;
+}
+
+/* ========= About ========= */
+.about .diner {
+    grid-template-columns: 1fr;
+}
+
+/* ========= Menus ========= */
+
+.desert,
+.search,
+.cocktails{
+    grid-template-columns: repeat(2,1fr);
+}
+.nav-search{
+    margin: 1rem;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+}
+.nav-search button{
+    margin: .5rem;
+    padding: .5rem 1rem;
+}
+.desert div:last-of-type,
+.search div:last-of-type,
+.cocktails div:last-of-type{
+    grid-column: 1/-1;
+    width: 50%;
+    justify-self: center;
+}
+.prix{
+    border: 0.2rem solid var(--beige);
+    padding: 1rem;
+    justify-content: center;
+    left: 25%;
+    top: 10%;
+    bottom: 10%;
+}
+form{
+    grid-template-columns:1fr;
+    width: 80%;
+}
+/* =======================================================
+                           FOOTER
+======================================================= */
+footer section {
+    flex-basis: 100%;
+    margin: 2rem;
+}
