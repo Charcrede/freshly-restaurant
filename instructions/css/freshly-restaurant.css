@@ -89,19 +89,18 @@ main h2::after,
 h3::before,
 h3::after,
 main section li::before {
-    font-family: "Font Awesome 5 Free";
     content: "\f005";
+    margin: 1rem;
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: var(--rouge);
-    margin: 1rem;
 }
 
 .contact span {
     padding: 0rem;
     text-decoration: underline dotted;
-    /* border-bottom:1px solid var(--rouge); */
-    color: var(--rouge);
     font-weight: bold;
+    color: var(--rouge);
 }
 
 .wrapper {
@@ -157,13 +156,16 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: black;
     padding: 1rem 2rem;
     background-color: var(--beige);
     font-weight: bold;
+    color: black;
 }
 
-header nav ul li a:hover,
+header nav ul li a:hover{
+    background-color: var(--rouge);
+    color: #fff;
+}
 .active {
     background-color: var(--marron);
     color: #fff;
@@ -210,8 +212,8 @@ main section:first-of-type {
     display: grid;
     grid-template-columns:2fr 1fr;
     text-align: justify;
-    gap: 2rem;
     grid-auto-flow: dense;
+    gap: 2rem;
 }
 .div-img{
     grid-column: 2/3;
@@ -278,29 +280,29 @@ article section a:nth-of-type(2):hover {
 /* ========= hover de l'image des articles dans la section du main ========= */
 
 .les-menus{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
     background-color: var(--marron);
     align-items: center;
-    padding: 0;
-    position: relative;
-    border: none;
-    margin: 0;
 }
 .les-menus img{
     vertical-align: middle;
 }
 
 .prix {
-    border: 0.4rem solid var(--beige);
-    opacity: 0;
-    transition: 1s;
     position: absolute;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
     left: 2rem;
     top: 2rem;
     right: 2rem;
     bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 0.4rem solid var(--beige);
+    opacity: 0;
+    transition: 1s;
+    color: #fff;
 }
 
 .prix span {
@@ -310,8 +312,6 @@ article section a:nth-of-type(2):hover {
 
 }
 
-.les-menus img {
-}
 .les-menus:hover{
     transform: scale(1.02);
 }
@@ -341,42 +341,41 @@ article section a:nth-of-type(2):hover {
 }
 
 .about .diner figure {
-    color: #000;
     position: relative;
-
     margin: 0;
     padding: 0;
+    color: #000;
 
 }
 
 .a_img-dining {
-    background-color: var(--marron);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--marron);
 }
 
 .see-more_diner {
-    width: 80%;
-    transition: 1s;
     position: absolute;
     left: 25%;
     top: 25%;
     height: 50%;
+    width: 80%;
     width: 50%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     font-size: 3rem;
+    transition: 1s;
     color: #fff;
     opacity: 0;
 }
 
 .see-more_diner a {
-    border: 0.4rem solid var(--beige);
     padding: 1rem;
-    color: #fff;
     font-family: var(--police-titre);
+    border: 0.4rem solid var(--beige);
+    color: #fff;
 }
 
 .a_img-dining:hover img {
@@ -405,11 +404,11 @@ figcaption {
 }
 
 .nav-search button {
+    padding: 1rem 2rem;
+    margin: 1rem;
     border: none;
     color: #000;
     background-color: var(--beige);
-    padding: 1rem 2rem;
-    margin: 1rem;
     transition: 1s;
 }
 
@@ -423,8 +422,7 @@ figcaption {
 .cocktails {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-inline: 1rem;
-    padding-block: 3rem;
+    padding:3rem 1rem;
     row-gap: 3rem;
     column-gap: 1rem;
     background-color: var(--beige);
@@ -436,13 +434,13 @@ figcaption {
                         PAGE-CONTACT
 ========================================================== */
 form {
-    background-color: var(--beige);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 60%;
-    text-align: left;
     margin-inline: auto;
+    text-align: left;
     padding: 2rem;
+    background-color: var(--beige);
 }
 
 fieldset {
@@ -468,14 +466,14 @@ fieldset:nth-of-type(3) {
 form button {
     grid-column: 1 / -1;
     padding: 1rem;
+    margin: 3rem;
+    justify-self: center;
     border: 1px solid;
+    border-radius: 1rem;
+    width: 50%;
     background-color: var(--marron);
     text-transform: uppercase;
     color: #fff;
-    width: 50%;
-    justify-self: center;
-    border-radius: 1rem;
-    margin: 3rem;
 }
 
 form button:hover {
@@ -500,14 +498,14 @@ label span {
                          FOOTER
 ========================================================== */
 footer {
-    background: url(../ressources/images/footer-bg.jpg);
     display: flex;
+    flex-flow: row wrap;
     justify-content:space-evenly;
     gap: 2rem;
+    margin-top: 3rem;
     text-align: center;
     color: #fff;
-    margin-top: 3rem;
-    flex-flow: row wrap;
+    background: url(../ressources/images/footer-bg.jpg);
 }
 
 footer h2 {
@@ -538,8 +536,8 @@ footer span {
 }
 .footer .par{
     flex-basis: 100%;
-    background-color: #444;
     text-align: center;
+    background-color: #444;
 }
 .footer .boss a{
     display:inline;
